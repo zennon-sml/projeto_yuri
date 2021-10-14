@@ -1,0 +1,7 @@
+1000       Junior              0
+2000       Zena                0
+3000       Joyce               0
+4000       Juliana             0
+5000       Michael             0
+1234       Yuri                0 
+1235       Yuri                0 
