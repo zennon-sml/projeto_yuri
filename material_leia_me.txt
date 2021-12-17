@@ -1,0 +1,75 @@
+a ideia é auxiliar pessoas que
+têm interesse em aprender o básico
+sobre lógica de programação e a
+linguagem Python, que será dividido
+por tópicos e seguirá uma trilha;
+
+### FUNCIONARA DE FORMA INDEPENDENTE ###
+### SO PRESICA CHAMAR A FUNÇÃO DESEJADA ###
+
+os conteudos seram divididos em dois databases
+logica de programação & linguagem python
+todas as funções seram chamadas do material.py
+ou seja import from material.py, ele fara a ligação 
+com os dois banco de dados e também apresentara de
+uma formatada tentando sem bonita e intuitiva 
+o conteudo contido nos dois
+
+### MATERIAL NÃO FORMATADO ###
+    logica de programação
+        1 oque é logica programação(exemplo do dia a dia, tipo passos para tomar café)
+        2 algoritimo(sequencia de passos ordenadas com a intenção de realizar algum objetivo)
+        3 algoritimo de programação(uso dos algoritimos junto a uma programação no caso python)
+    linguagem python
+        1 explicar que a linguagem é uma maneira para fazer a comunicação entre homen e maquina
+            1.1 explicar oque é uma programação de alto nivel(mais proxima da linguagem humana)
+        2 explicar que ela é interpretada e não compilada
+        3 algumas das syntaxes basicas do python
+#print("---- bem vindo ao material ----")
+	print("qual tópico você deseja estudar hoje?")
+	#print("1º logica de programação\n    1.1º oque é logica programação\n    1.2º oque é algoritmo\n    1.3º algoritimo de programação")
+	#print("2º linguagem de programação python\n    2.1º oque é uma linguagem de programção\n    2.2º interpretada ou compilada?\n    2.3º sintaxes basicas do python")
+	opcao = int(input())
+############ material formatado joyce ################
+1° Algoritimo:*    Um algoritmo é uma sequência finita de instruções bem claras e bem detalhadas que, quando colocadas em uma ordem lógica, levam-nos à solução de um problema.
+
+2° lógica de programação:*    Podemos definir “lógica de programação” como a elaboração de sequências de ações para atingir um determinado objetivo.*Exemplo simples: verificar se se o aluno passou na materia,para passar é preciso ter nota 7*então: se a "nota" do aluno for maior que 7, ele passou,se for menor, ele reprovou.*Exemplicando com a linguagem python: *a = 8*if a >= 7:*    print("Aprovado")*else:*    print("Reprovado")*Saída: Aprovado
+
+3° Algortimo de programação:*    Um algoritimo de programação é também uma receita, so que essa receita vai ser executada por meio de uma linguagem que vai se comunicar com o computador e passar os passos necessarios para que depois do processamento desses passos o computador retorne oque lhe foi pedido.*um pequeno exemplo seria:*objetivo: somar dois valores e apresentalos com a mensagem "a soma é x"*nois usaremos o python como linguagem então seria o sequinte:*a = 4*b = 14*print("a soma é", a + b)*saída: a soma é 18
+
+4° Linguagem de programação de alto nível:*    Elas facilitam o trabalho do programador pois, para se comunicar com o computador usamos linguagens de programação, porque o computador so entende 0(zeros) e 1(uns), já a linguagem de alto nivel se aproxima mais da nossa linguagem humana(geralmente o inglês), facilitando muito a comunicação entre homen máquina.
+
+5° Interpretada ou compilada:*    Para que as linguagens façam a tradução do nosso código para que o computador entende os comandos dados, elas primeiros são compiladas assim quando o programa é executado o computador consegue processa-lo exemplos: C++, GO, já as interpretadas são traduzidas para o computador em tempo real não presisando serem compiladas como nosso querido python.
+
+6° Funções e Syntaxes básicas do Python:    *Declaração de variáveis - para se declarar uma variavel em python basta apenas da um nome a ela e ela ja automaticamente irá atribuir um tipo a variavel(ou você tambêm pode atribuir manualmente com*int(),float(),list(),chr(),str()*respectivamente(inteiro, float, lista, charactere, string) entre outros*print() - imprime oque lhe for dado como parametro exemplos:*print("opa")*a = 2*print(a)*input() - recebe da entrada padrão(teclado) exemplo:*a = input()*operadores - permitem fazer operações matematicas exemplos:*2 + 2(soma)*2 - 2(subtração)*2 asterisco 2(multiplicação)*2 / 2(divisão)*2 % 2(resto da divisão de dois inteiros)*if - verifica se é verdade ou não uma condição exemplo:*if(se) 4/2 == 2:*    print("é 2")*elif(senão se) - verifica mais uma condição depois de ela não ser satisfeita no if exemplo:*elif 4/2 == 1:*    print("não é 2")*else - se não for nenhuma do if nem do elif vai ser pego pelo else(senão) exemplo:*else:*    print("algo nunca antes visto")*Operadores logicos - verificam uma condição dadas duas variáveis:*2 == 2(verifica igualdade)*2 != 2(verifica desigualdade)*2 < 2(se é menor)*2 > 2(se é maior)*2 <= 2(se é menor ou igual)*2 >= 2(se é maior ou igual)
+
+7° Referências e Cursos:*    -> Tutorial de Python - Documentação de Python 3*por: python.org*url: https://docs.python.org/pt-br/3/tutorial/index.html*-> Curso Básico de Lógica de Programação*por: Paulo Sérgio de Moares, UNICAMP 2000*url: https://ftp.unicamp.br/pub/apoio/treinamentos/logica/logica.pdf*-> Algoritmos e Programação, IFMG 2013*por: Adolfo J. G. Stavaux Baudson e Francisco César Rodrigues de Araújo*url: https://www.ifmg.edu.br/ceadop3/apostilas/algoritmos-e-programacao*-> Algoritmos e Programação, IFMG 2013*por: Adolfo J. G. Stavaux Baudson e Francisco César Rodrigues de Araújo*url: https://www.ifmg.edu.br/ceadop3/apostilas/algoritmos-e-programacao*-> Introdução à Computação com Python: um curso interativo*por: J.C. de Pina Jr. e C.H. Morimoto*url: https://panda.ime.usp.br/cc110/static/cc110/index.html*-> Resolução de Problemas com Algoritmos e Estrutura de Dados usando Python*Versão original em inglês por Brad Miller e David Ranum, Luther College.*Traduzido por Andrew Toshiaki Nakayama Kurauchi, Carlos E. Leão Elmadjian, C. H. Morimoto e J. C. de Pina, IME-USP.*url: https://panda.ime.usp.br/panda/static/pythonds_pt/index.html
+
+############ material nao formatado joyce ################
+
+Para se ter um algoritmo, é necessário:*1. Que se tenha um número finito de passos.*2. Que cada passo esteja precisamente definido, sem possíveis ambiguidades.*3. Que exista zero ou mais entradas tomadas de conjuntos bem definidos.*4. Que exista uma ou mais saídas.*5. Que exista uma condição de fim sempre atingida para quaisquer entradas e em um tempo finito.*É importante frisar que:*1. Não existe apenas um algoritmo para a solução de um problema.*2. Um algoritmo pode ser numérico ou não.*1. Homem e a máquina*Para que um computador possa desempenhar uma tarefa, é necessário que esta seja detalhada passo a passo, em uma forma compreensível pela máquina, utilizando aquilo que se chama de programa.*Nesse sentido, um programa de computador nada mais é que um algoritmo escrito em uma forma compreensível pelo computador, isto é uma comunicação entre o homem e a máquina.*É importante ressaltar que qualquer tarefa que siga determinado padrão pode ser descrita por um algoritmo, por exemplo:*como fazer arroz doce, ou então, calcular o saldo financeiro de um estoque
+
+Elas visam facilitar o trabalho do programador, pois usam instruções que são mais fáceis de serem entendidas.
+Além disso, a linguagem de alto nível permite que você escreva códigos usando os idiomas que conhece (português, espanhol, inglês etc.) 
+traduzindo-os em seguida para o idioma da máquina por tradutores ou compiladores.
+
+
+Tradutor:
+Eles traduzem programas escritos em uma linguagem de programação para a linguagem de máquina do computador 
+e são executados à medida que são traduzidos.
+
+Compilador:
+Ele permite que você traduza um programa inteiro de uma só vez, 
+tornando-o mais rápido e pode ser armazenado para uso posterior sem a necessidade de uma nova tradução.
+
+2. Linguagem interpretada 
+Python é uma linguagem de programação interpretada. Quando pensamos em interpretar, pode ser que pensemos em alguém que trabalhe como intérprete. 
+Isso envolve receber uma informação de uma linguagem fonte e transmiti-la de maneira traduzida para uma linguagem alvo. 
+Uma linguagem interpretada executa um processo similar. Ela será interpretada por meio de um programa chamado interpretador, que irá então converter nosso código para linguagem de máquina. 
+Contudo, esse processo irá ocorrer aos poucos, pois o interpretador irá realizar a conversão analisando linha por linha, e não o programa inteiro, diferentemente do que ocorre com o compilador.
+
+3. Syntaxes básicas do phyton Formato do Símbolo Conversão
+%c Caractere
+%s String convertida pelo método str() tem prioridade
+%i Sinal decimal inteiro
+%d Sinal decimal inteiro

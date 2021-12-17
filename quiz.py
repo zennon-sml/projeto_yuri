@@ -1,3 +1,86 @@
+<<<<<<< HEAD
+import sqlite3
+from principal import pro_intro
+
+def pro_quiz(dad):#Apresenta o quiz(o parametro 'dad' é a lista com os dados do usuario: ID, nome e pontos)
+    print("\n---------------------QUIZ-----------------------\n\nVamos testar seus conhecimentos",dad[1])
+    print("Serão 10 perguntas\n")
+    dados = dad
+    
+    while True:
+        dificu_quiz = int(input("Selecione a dificuldade, ou volte:\n\n'1' Fácil\n'2' Médio\n'3' Difícil\n'9' Voltar\nR: "))
+        con = sqlite3.connect("quiz_db.db")
+        cursor = con.cursor()
+        
+        if dificu_quiz == 1:
+            cursor.execute("SELECT * FROM facil")
+            soma_pont = 1
+        elif dificu_quiz == 2:
+            cursor.execute("SELECT * FROM medio") #Conforme a escolha da dificuldade o sistema vai acessar o banco de dados
+            soma_pont = 2
+        elif dificu_quiz == 3:
+            cursor.execute("SELECT * FROM dificil")
+            soma_pont = 3
+        elif dificu_quiz == 9:
+            con.close()
+            pro_intro(dados)
+
+        questoes = cursor.fetchall()
+        con.commit()
+        con.close()
+        pontuacao = 0
+        acertos = 0
+
+        for linha in questoes: #Exibindo as questões para o usuario
+            print()
+            print("{}- {}".format(linha[0],linha[1]))
+            print("A)",linha[2])
+            print("B)",linha[3]) 
+            print("C)",linha[4])
+            print("D)",linha[5])
+            resposta = input("R: ")
+            print("\n#-------------#-------------#-------------#-------------|")
+            
+            if resposta.lower() == linha[6]: #Se a resposta for correta
+                print("Resposta Correta")
+                pontuacao += soma_pont
+                acertos += 1
+            else: #Se a resposta estiver incorreta
+                print("Resposta Errada")
+                print("Correta:", linha[6])
+
+        print("\n\n*******************************************************************\n")
+
+        lista_respostas = ["Camuflar um erro seu é anular a busca pelo conhecimento. Aprenda com eles e faça novamente de forma correta.",
+        "Vish, só 1, estude mais da próxima vez!","2 é melhor que 1, mas ainda é ruim, estude mais!",
+        "3 para mais sorte e mais estudo da próxima vez!","4 é um belo número, mas não vai te dar muitos pontos aqui, estude mais!",
+        "Meio certo e meio errado, estude mais um pouco!","Foi bom, mas pode ser melhor","Parabéns, você foi muito bem!",
+        "Wooow, você foi incrivel, só errou 2","NOSSAAA!!! Você foi quase perfeito, parabéns!!!",
+        "PERFEITO!!! Você conseguiu a pontuação máxima, sem palavras!!!"] #Respostas que seram imprimidas dependendo da pontuação
+        
+        print(dad[1],"você acertou", acertos, "perguntas e sua pontuação foi", pontuacao) #Mensagens finais com pontuação, acertos e pontuação atualizada
+        print(lista_respostas[acertos])
+        pontos_velhos = int(dad[2])
+        nova_pontuacao = pontuacao + pontos_velhos
+        print("Agora você está com", nova_pontuacao, "pontos")
+        
+        con = sqlite3.connect("Usuarios.db")
+        cursor = con.cursor()
+        cursor.execute("UPDATE novo SET pontos=? WHERE id=?", [nova_pontuacao, dad[0]]) #Atualiza a pontuação no banco de dados
+        cursor.execute("SELECT * FROM novo WHERE id='"+dad[0]+"';")
+        con.commit()
+        novo_p = cursor.fetchall()
+        con.close()
+        dados = []
+
+        for linha in novo_p:
+            dados.append(linha[0])
+            dados.append(linha[1]) #Adciona os dados atualizados a uma lista para ser o novo parametro do pro_intro
+            dados.append(linha[2])
+        print("\nVamos novamente?")
+
+        
+=======
 def pro_quiz():
     print("-------------------------------------------------------------------------------------------------------\nAgora vamos testar seus conhecimentos\n")
     print("Seram 10 perguntas\n")
@@ -62,3 +145,4 @@ pro_quiz()
 
 
     
+>>>>>>> fe227c4 (versão 0.1)

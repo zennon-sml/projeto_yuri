@@ -1,0 +1,58 @@
+String: Na programação de computadores, uma cadeia de caracteres ou string é uma sequência de caracteres, geralmente utilizada para representar palavras, frases ou textos de um programa.
+Inteiro: Em ciência da computação, um inteiro é um dado do tipo integral, um tipo de dado que representa algum subconjunto finito dos inteiros matemáticos. Tipos de dados integrais podem ser de tamanhos diferentes e podem ou não ser permitido conterem valores negativos.
+Float: Float é um termo abreviado para ponto flutuante. Por definição, é um tipo de dados fundamental embutido no compilador que é usado para definir valores numéricos com flutuantes pontos decimais.
+Boolean: Em ciência da computação, boolean, ou lógico, é um tipo de dado primitivo que possui dois valores, que podem ser considerados como 0 ou 1, falso ou verdadeiro. Chamado boolean em homenagem a George Boole, que definiu um sistema de lógica algébrica pela primeira vez na metade do século XIX.
+classe: Um modelo para criação de objetos definidos pelo usuário. Definições de classe normalmente contém definições de métodos que operam sobre instâncias da classe.
+função: Uma série de instruções que retorna algum valor para um chamador. 
+IDLE: é um editor básico e um ambiente interpretador que vem junto com a distribuição padrão do Python.
+imutável: Um objeto que possui um valor fixo. Estes objetos não podem ser alterados.
+importação: O processo pelo qual o código Python em um módulo é disponibilizado para o código Python em outro módulo.
+dicionário: Um vetor associativo em que chaves arbitrárias são mapeadas para valores. As chaves podem ser quaisquer objetos que possuam os métodos __hash__() e __eq__().
+docstring: Uma string literal que aparece como primeira expressão numa classe, função ou módulo.
+expressão: Uma expressão é a acumulação de elementos de expressão como literais, nomes, atributos de acesso, operadores ou chamadas de funções, todos os quais retornam um valor.
+localizador: Um objeto que tenta encontrar o carregador para um módulo que está sendo importado.
+importador: Um objeto que localiza e carrega um módulo; Tanto um localizador e o objeto carregador.
+lista: Uma sequência embutida no Python. 
+metaclasse: A classe de uma classe. Definições de classe criam um nome de classe, um dicionário de classe e uma lista de classes base. A metaclasse é responsável por receber estes três argumentos e criar a classe.
+método: Uma função que é definida dentro do corpo de uma classe. 
+argumento: Um valor passado para uma função (ou método) ao chamar a função.
+argumento nomeado: um argumento precedido por um identificador (por exemplo, name=) na chamada de uma função ou passada como um valor em um dicionário precedido por **.
+argumento posicional: um argumento que não é um argumento nomeado. Argumentos posicionais podem aparecer no início da lista de argumentos e/ou podem ser passados com elementos de um iterável precedido por *
+módulo: Um objeto que serve como uma unidade organizacional de código Python. Os módulos têm um espaço de nomes contendo objetos Python arbitrários. Os módulos são carregados pelo Python através do processo de importação.
+módulo specUm espaço de nomes que contém as informações relacionadas à importação usadas para carregar um módulo. 
+mutável: Objeto mutável é aquele que pode modificar seus valor mas manter seu id().
+objeto: Qualquer dado que tenha estado (atributos ou valores) e comportamento definidos (métodos). 
+pacote Um módulo Python é capaz de conter submódulos ou recursivamente, subpacotes. Tecnicamente, um pacote é um módulo Python com um atributo __path__.
+parâmetro: Uma entidade nomeada na definição de uma função (ou método) que específica um argumento (ou em alguns casos, argumentos) que a função pode receber
+parâmetro posicional: especifica um argumento que pode ser fornecido apenas por posição. Parâmetros somente-posicionais podem ser definidos incluindo o caractere / na lista de parâmetros da definição da função após eles.
+parâmetro nomeado: especifica um argumento que pode ser passado para a função somente por nome. Parâmetros somente-nomeados podem ser definidos com um simples parâmetro var-posicional ou um * antes deles na lista de parâmetros na definição da função.
+porção: Um conjunto de arquivos em um único diretório (possivelmente armazenado em um arquivo zip) que contribuem para um pacote de espaço de nomes.
+Python 3000: Apelido para a linha de lançamento da versão do Python 3.x (cunhada há muito tempo, quando o lançamento da versão 3 era algo em um futuro muito distante.) Esse termo possui a seguinte abreviação: “Py3k”.
+fatia: Um objeto geralmente contendo uma parte de uma sequência. Uma fatia é criada usando a notação de subscrito [] pode conter também até dois pontos entre números, como em variable_name[1:3:5].
+instrução: Uma instrução é parte de uma suíte (um “bloco” de código). Uma instrução é ou uma expressão ou uma de várias construções com uma palavra reservada, tal como if, while ou for.
+if: Utilizamos o comando if para verificar uma expressão e executar um bloco de código caso a condição definida seja verdadeira. É importante dizer que a instrução if pode ser utilizada sozinha, ou seja, apenas para executar algo se a condição for verdadeira.
+while: é uma das estruturas de repetição disponíveis na linguagem Python, que permite executar um bloco de códigos enquanto uma determinada condição for verdadeira.
+for: é uma das estruturas de repetições disponíveis na linguagem que permite a execução de um mesmo comando até que uma determinada condição seja atendida.
+elif: é utilizado quando queremos realizar a verificação de outra expressão caso a primeira validação seja falsa.
+else: é uma estrutura condicional que executa outro conjunto de instruções caso ela seja falsa.
+range: é utilizada para gerar uma sequência numérica dentro de um intervalo determinado. Ela normalmente é utilizada como auxiliar da função for.
+break: oferece a possibilidade de sair de um loop quando uma condição externa é acionada. 
+continue: interrompe a execução do ciclo sem interromper a execução do laço de repetição. 
+pass: O comando pass não faz nada. Pode ser usada quando a sintaxe exige um comando mas a semântica do programa não requer nenhuma ação. 
+print: Sua função é, basicamente, exibir mensagens na tela ou enviá-las para outro dispositivo, como imprimir dentro de arquivos de texto.
+end= : para dizer que você quer um espaço após o fim da instrução em vez de um caractere de nova linha. 
+return: é uma instrução especial que você pode usar dentro de uma função ou método para enviar o resultado da função de volta ao chamador.
+def: serve para definir funções onde terá uma sequencia de comandos, quando precisar dessas sequência em alguma parte do programa basta chama-la que ela vai executar a função definida.
+input(): Esta função lê a entrada que o usuário digitou e armazena o valor em uma variável, por exemplo. A entrada é sempre retornada como um tipo string, independente do tipo de dado fornecido.
+traceback: é a informação que o interpretador Python fornece para nos ajudar a identificar o problema em nosso código.
+format(): em python serve basicamente para criar uma string que contém campos entre chaves que são substituidos pelos argumentos de format.
+API: interface de programação de aplicativos.
+algoritmo: é uma sequência finita de ações executáveis que visam obter uma solução para um determinado tipo de problema.
+Back-End: É a parte da web que fica invisível para o usuário final.  Ou seja, tudo que dá estrutura e apoio às ações do usuário da máquina.
+Back-End: É a parte da web que fica invisível para o usuário final.  Ou seja, tudo que dá estrutura e apoio às ações do usuário da máquina.
+Front-end: está muito relacionado com a interface gráfica do projeto. Ou seja, é onde se desenvolve a aplicação com a qual o usuário irá interagir diretamente, seja em softwares, sites, aplicativos, etc.
+Front-end: está muito relacionado com a interface gráfica do projeto. Ou seja, é onde se desenvolve a aplicação com a qual o usuário irá interagir diretamente, seja em softwares, sites, aplicativos, etc.
+framework: é um pacote de códigos prontos que podem ser utilizados no desenvolvimento de sites.
+Full Stack: é um profissional multitarefa, que consegue transitar entre projetos de desenvolvimento Front-End e Back-End. 
+Full Stack: é um profissional multitarefa, que consegue transitar entre projetos de desenvolvimento Front-End e Back-End. 
+indentação: São os recuos no texto de um código usados para organizar visualmente e melhorar a leitura.
